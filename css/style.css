@@ -635,7 +635,7 @@ a{
 	box-sizing: border-box;
 	border: 1px solid #ccc;
 	width: 32%;
-	height: 140px;
+	min-height: 150px;
 
 	margin-left: 5px;
 	margin-right: 5px;
@@ -683,9 +683,15 @@ a{
 }
 
 .footer{
-	height: 445px;
+	height: auto;
 	background-color: #333366;
 }
+
+.footer .innercont{
+	width: 80%;
+	padding-left: 5px;
+}
+
 .footer .block{
 	display: inline-block;
 	margin-left: -5px;
@@ -693,6 +699,8 @@ a{
 	padding-top: 60px;
 	width: 24.6%;
 	vertical-align: top;
+
+	margin-bottom: 60px;
 
 }
 
@@ -703,7 +711,6 @@ a{
 
 .footer .text{
 	color: #fff;
-	margin-right: 45px;
 	font-size: 12px;
 	line-height: 22px;
 }
@@ -793,3 +800,60 @@ a{
 
 	padding-top: 6px;
 }
+
+.footer .upper{
+	border-bottom: 1px solid #336666;
+}
+
+.footer .lower{
+	text-align: center;
+}
+.footer .menu{
+	padding-top: 40px;
+	padding-bottom: 10px;
+}
+.footer .menu li{
+	display: inline-block;
+	line-height: normal;
+	color: #fff;
+	font-size: 12px;
+
+}
+
+.footer .menu a{
+	font-weight: bold;
+	color: #fff;
+	font-size: 12px;
+
+	padding-left: 7px;
+	padding-right: 7px;
+}
+
+.footer .menu a:hover{
+	color: #33cc99;
+}
+
+.footer .copyright{
+	color: #9999cc;
+	font-size: 11px;
+	line-height: 12px;
+	padding-bottom: 40px;
+}
+
+.footer .top{
+	height: 35px;
+	width: 70px;
+
+	display: inline-block;
+
+	background-image: url('../img/footer3.png');
+	background-size: 70px 35px;
+
+	color: #fff;
+	vertical-align: bottom;
+}
+
+.footer .top .tick{
+	padding-top: 13px;
+}
+
