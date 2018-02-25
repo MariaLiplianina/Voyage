@@ -1,0 +1,395 @@
+@media (max-width: 1270px){
+	.main .offers{
+		height: auto;
+	}
+	.main .offers .of{
+		margin: 20px 65px;
+	}
+	.footer .upper .container{
+		margin-bottom: 35px;
+	}
+	.footer .block{
+		margin-left: 0px;
+		padding-left: 5px;
+		width: calc(50% - 10px);
+		margin-bottom: 0px;
+	}
+	.footer .tags,
+	.footer .address{
+		padding-top: 20px;
+	}
+}
+
+@media (max-width: 1230px){
+	.main .types .container{
+		margin-bottom: 85px;
+	}
+	.main .types .type{
+		margin-left: 60px;
+		margin-right: 60px;
+		margin-bottom: 35px;
+	}
+} 
+
+@media (max-width: 1024px){
+	.header{
+		display: none;
+	}
+	.nav {
+		height: 60px;
+		line-height: 60px;
+	}
+	.nav #nav-mobile:checked ~ .menu{
+		display: block;
+		width: 50%;
+
+		position: absolute;
+		top: 60px;
+		right: 0px;
+		z-index: 5;
+		background-color: #333366;
+	}
+	.nav .menu{
+		margin-right: 0px;
+		display: none;
+	}
+
+	.nav .menu li{
+		display: block;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		text-align: right;
+	}
+
+	.nav .menu a{
+		color: #fff;
+		font-size: 18px;
+
+	}
+
+	.nav .nav-mobile{
+		display: inline-block;
+		width: 50%;
+		height: 50px;
+		margin-bottom: -10px;
+	}
+
+	.nav .nav-mobile label{
+		height: 60px;
+		width: 30px;
+
+		position: absolute;
+		top: 2px;
+		right: 55px;
+
+		font-size: 30px;
+	}
+
+	.nav .logo{
+		margin-top: -10px;
+	}
+
+	.nav .search{
+		top: 10px;
+	}
+
+	.nav .search .fa{
+		top: -10px;
+	}
+	.main .promo{
+		height: 500px;
+	}
+
+	.main .promo .leftarrow,
+	.main .promo .rightarrow{
+		top: 210px;
+	}
+
+	.main .promo h1{
+		padding-top: 180px;
+	}
+	.main .search .text{
+		display: none;
+	}
+
+	.main .search .form{
+		width: 100%;
+		padding-left: 0px;
+
+		border-left: none;
+	}
+
+	.main .search .form label{
+		padding: 0px;
+	}
+
+	.main .search .form select{
+		width: 90%;
+		margin-bottom: 10px;
+	}
+	.main .search .form input[type=submit]{
+		margin-left: 10%;
+		width: 90%;
+		text-transform: uppercase;
+	}
+
+	.main .offers h2{
+		padding-top: 40px;
+	}
+	.main .offers p{
+		margin-bottom: 20px;
+	}
+	.main .offers .tours{
+		margin-bottom: 35px;
+	}
+	.main .offers .of{
+		margin: 20px 35px;
+	}
+	.main .types .container{
+		margin-bottom: 0px;
+	}
+	.main .types h2{
+		padding-top: 45px;
+	}
+
+	.main .types p{
+		margin-bottom: 40px;
+	}
+	.main .review h2{
+		padding-top: 45px;
+	}
+	.main .review p{
+		margin-bottom: 40px;
+	}
+	.main .review .rev{
+		margin-bottom: 35px;
+	}
+	.footer .innercont{
+		padding-left: 0px;
+	}
+
+	.footer .newsletter,
+	.footer .latestnews{
+		padding-top: 40px;
+	}
+
+} 
+
+@media (max-width: 920px){
+	.main .types .type{
+		margin-left: 30px;
+		margin-right: 30px;
+	}
+	.main .review .wrapping{
+		margin-bottom: 35px;
+	}
+
+	.main .review .rev{
+		display: block;
+		width: 100%;
+		min-height: 50px;
+		margin-bottom: 10px;
+		margin-left: 0px;
+	}
+}
+
+@media (max-width: 768px){
+	.nav #nav-mobile:checked ~ .menu{
+		display: block;
+		width: 100%;
+	}
+	.containercar{
+		display: block;
+		width: 80%;
+		margin: 0 auto;
+	}
+	.main .promo{
+		height: 370px;
+	}
+	.main .promo h1{
+		padding-top: 80px;
+	}
+
+	.main .promo button{
+		width: 100%;
+		margin-top: 10px;
+	}
+	.main .promo .left{
+		margin-right: 0px;
+	}
+
+	.main .promo button a{
+		width: 80%;
+		margin: 0 auto;
+		display: block;
+	}
+
+	.main .promo .leftarrow,
+	.main .promo .rightarrow{
+		width: 20px;
+		height: 20px;
+		top: 150px;
+	}
+	.main .promo .leftarrow{
+		margin-left: 3%;
+	}
+	.main .promo .rightarrow{
+		margin-right: 3%;
+	}
+
+	.main .promo .rightarrow a,
+	.main .promo .leftarrow a{
+		background-color: transparent;
+		padding: 0;
+	}
+	.main .search .form{
+		margin-left: 0;
+	}
+	.main .search .form label{
+		display: none;
+	}
+
+	.main .search .form select{
+		width: 100%;
+	}
+	.main .search .form input[type=submit]{
+		margin-left: 00%;
+		width: 100%;
+	}
+	.main .offers .arrow{
+		display: block;
+	}
+	.main .offers .of3,
+	.main .offers .of4,
+	.main .offers .of5{
+		display: none;
+	}
+	.main .offers .of:hover{
+		position: static;
+		margin-top: 20px;
+	}
+
+	.main .offers .inner:hover{
+		position: static;
+		height: 260px;
+		margin-top: 0px;
+	}
+	.main .offers .inner:hover .img{
+		height: 195px;
+	}
+	.main .offers .inner:hover .text{
+		padding-top: 12px;
+	}
+
+	.main .offers .of{
+		margin: 20px 10px;
+	}
+	.main .types{
+		background-image: none;
+		background-color: #336;
+	}
+	.main .types .type{
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+
+	.main .review .arrow{
+		display: block;
+	}
+	.main .review .wrapping{
+		width: calc(100% - 60px);
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.main .review .rev2,
+	.main .review .rev3{
+		display: none;
+
+	}
+	.footer .menu{
+		display: none;
+	}
+	.footer .copyright{
+		padding-bottom: 20px;
+		padding-top: 20px;
+	}
+	.footer .top{
+		display: none;
+	}
+
+	.footer .latestnews,
+	.footer .tags,
+	.footer .address{
+		display: none;
+	}
+	.footer .newsletter{
+		display: block;
+		width: 100%;
+		margin-left: -5px;
+	}
+
+}
+
+@media (max-width: 670px){
+		.main .promo{
+		height: 400px;
+	}
+	.footer .innercont{
+		width: 100%;
+	}
+	.main .types .type{
+		display: inline-block;
+		height: 160px;
+		width: 120px;
+	}
+	.main .types .circle{
+		height: 100px;
+		width: 120px;
+		border: none;
+		border-radius: 0;
+	}
+
+	.main .types a:hover .circle{
+		border: none;
+	}
+
+	.footer form input[type=text]{
+		width: 80%;
+		box-sizing: border-box;
+
+		padding: 12px 9px;
+		border: 1px solid #003333;
+		border-radius: 2px;
+	}
+
+	.footer form input[type=submit]{
+
+		text-transform: uppercase;
+		width: calc(20% - 5px);
+	}
+	.footer .latestnews .border,
+	.footer .latestnews .wrapping{
+		margin-left: 0px;
+	}
+
+}
+
+
+@media (max-width: 480px){
+	.main .promo h1{
+		padding-top: 50px;
+	}
+}
+
+@media (max-width: 360px){
+	.main .offers .of{
+		width: 230px;
+		margin-left: 0;
+		margin-right: 0;
+	}
+	.main .offers .text{
+		width: 70%;
+		padding-left: 0px;
+	}
+}
