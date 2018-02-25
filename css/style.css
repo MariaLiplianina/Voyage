@@ -5,11 +5,10 @@
 
 html, body, .site{
 	height: 100%;
-
 }
 
 body {
-	font-family: arial;
+	font-family: "Roboto-Regular", arial;
 	color: #333366;
 }
 
@@ -42,8 +41,10 @@ h4, h5, h6, p{
 
 .container {
 	max-width: 1170px;
+	width: 94%;
 	margin-left: auto;
 	margin-right: auto;
+	position: relative;
 }
 
 .green{
@@ -109,6 +110,14 @@ a{
 	height: 92px;
 	background-color: white;
 	line-height: 92px;
+	position: relative;
+	top: 0;
+	left: 0;
+}
+.nav #nav-mobile,
+.nav .nav-mobile,
+.nav .logomob{
+	display: none;
 }
 
 .nav .logo,
@@ -123,9 +132,9 @@ a{
 	font-weight: bold;
 	text-transform: uppercase;
 }
-.nav .menu,
-.nav .search{
-	float: right;
+.nav .menu{
+	position: absolute;
+	right: 7%;
 }
 
 .nav .menu{
@@ -146,19 +155,36 @@ a{
 	padding-right: 20px;
 
 	text-transform: uppercase;
+
+	transition: 0.5s;
 }
 
 .nav .menu a:hover{
 	color: #33cc99;
+	transition: 0.5s;
 }
 
 .nav .search{
 	height: 40px;
 	width: 40px;
-	margin-top: 24px;
-	margin-right: 5px;
+
+	position: absolute;
+	top: 25px;
+	right: 0;
+
 	border: 2px solid #333366;
 	border-radius: 50%;
+
+	text-align: center;
+
+	cursor: pointer;
+}
+
+.nav .search .fa{
+	position: relative;
+	top: -25px;
+
+	font-size: 20px;
 }
 
 
@@ -217,11 +243,14 @@ a{
 .main .promo .rightarrow{
 	display: inline-block;
 	position: absolute;
-	width: 80px;
-	height: 80px;
+	width: 81px;
+	height: 81px;
 	top: 310px;
+
 	text-align: center;
+	font-size: 50px;
 	line-height: 80px;
+
 }
 
 .main .promo .leftarrow{
@@ -236,12 +265,16 @@ a{
 .main .promo .leftarrow a{
 	color: rgba(255,255,255, 0.7);
 	background-color: rgba(255,255,255,0.4);
-	padding: 30px 35px;
+	padding: 10px 32px;
+
+	transition: 0.5s;
 }
 
 .main .promo a:hover{
 	background-color: #33cc99;
 	color: #fff;
+
+	transition: 0.5s;
 }
 
 .main .promo h1,
@@ -273,11 +306,15 @@ a{
 
 	border: 2px solid #fff;
 	border-radius: 5px;
+
+	transition: 0.5s;
 }
 
 .main .promo button a:hover{
 	background-color: #33cc99;
 	border: 2px solid #33cc99;
+
+	transition: 0.5s;
 }
 
 
@@ -287,9 +324,11 @@ a{
 	margin-left: auto;
 	background-color: #333366;
 	color: #fff;
+	text-align: center;
 
 	border-top: 1px solid rgba(51, 102, 102, 0.5);
 }
+
 .main .search .text,
 .main .search .form{
 	display: inline-block;
@@ -299,8 +338,9 @@ a{
 }
 
 .main .search .text{
-	width: 160px;
+	width: 12%;
 	text-transform: uppercase;
+	text-align: left;
 }
 
 .main .search .text .top{
@@ -316,41 +356,101 @@ a{
 }
 .main .search .form{
 	padding-left: 30px;
+	width: calc(88% - 30px);
+	margin-left: -10px;
 
 	border-left: 1px solid rgba(51, 102, 102, 0.5);
 }
+
 .main .search .form input{
 	font-size: 16px;
 }
 .main .search .form label{
-	font-size: 16px;
-	opacity: 0.7;
-	padding-left: 20px;
+	display: inline-block;
+	width: 10%;
 	padding-right: 20px;
+	padding-left: 20px;
+	box-sizing: border-box;
+
+	font-size: 16px;
+	font-family: "Roboto-Regular", arial;
+
+	opacity: 0.7;
 }
 
-.main .search .form input[type=text]{
-	width: 310px;
-
+.main .search .form select{
+	width: 30%;
+	box-sizing: border-box;
 	padding: 16px 9px;
-	border: 1px solid #003333;
-}
-.main .search .form input[type=submit]{
-	margin-left: 20px;
 
+	font-family: "Roboto-Regular", arial;
+	font-size: 16px;
+	color: #666;
+
+	border: 1px solid #003333;
+
+	background-image: url('../img/earth.png');
+	background-repeat: no-repeat;
+	background-size: 20px 20px;
+	background-position: 95% center;
+}
+
+.main .search .form select:focus{
+	outline: none;
+}
+
+.main .search .form .country{
+	background-repeat: no-repeat;
+	background-size: 20px 20px;
+	background-position: 95% center;
+
+}
+.main .search .form .date{
+	background-image: url('../img/calendar.png');
+
+}
+.main .search .form option{
+	font-size: 16px;
+}
+
+.main .search .form input[type=submit]{
+	margin-left: 5%;
+	width: 15%;
+
+	font-family: "Roboto-Regular", arial;
 	text-transform: capitalize;
 
 	padding: 16px 30px;
 	color: #fff;
 	background-color: #33cc99;
 	border: none;
-
 	cursor: pointer;
+}
+
+.main .search .form input[type=submit]:focus{
+	outline: none;
 }
 
 .main .offers{
 	height: 625px;
 	background-color: #fff;
+	position: relative;
+}
+
+.main .offers .arrow{
+	display: none;
+	position: absolute;
+	top: 250px;
+	z-index: 30;
+
+	font-size: 40px;
+}
+.main .offers .leftarrow{
+	left: 0;
+}
+
+.main .offers .rightarrow{
+	right: 0;
 }
 
 .main .offers h2{
@@ -377,6 +477,9 @@ a{
 .main .offers .tours{
 	text-align: center;
 	margin-bottom: 150px;
+	width: calc(100% - 30px);
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .main .offers .of{
@@ -385,7 +488,7 @@ a{
 
 	height: 260px;
 	width: 272px;
-	margin: 0px 12px;
+	margin: 0px 10px;
 }
 
 .main .offers .of:hover{
@@ -404,6 +507,8 @@ a{
 	box-sizing: border-box;
 
 	cursor: pointer;
+
+	transition: 0.5s;
 }
 
 .main .offers .inner:hover{
@@ -414,6 +519,8 @@ a{
 	color: #fff;
 	bottom: 0;
 	margin-bottom: -40px;
+
+	transition: 0.5s;
 }
 
 .main .offers .inner:hover .img{
@@ -423,18 +530,6 @@ a{
 	padding-top: 17px;
 	color: #fff;
 }
-.main .offers .of6,
-.main .offers .of1{
-	display: none;
-}
-
-.main .offers .of:hover .category{
-	color: #9999cc;
-}
-.main .offers .of:hover .tick{
-	color: #fff;
-	padding-top: 30px;
-}
 
 .main .offers .img{
 	width: 100%;
@@ -443,24 +538,6 @@ a{
 	background-position: center bottom;
 }
 
-.main .offers .of1 .img{
-	background-image: url('../img/part1.png');
-}
-.main .offers .of2 .img{
-	background-image: url('../img/part2.png');
-}
-.main .offers .of3 .img{
-	background-image: url('../img/part3.png');
-}
-.main .offers .of4 .img {
-	background-image: url('../img/part4.png');
-}
-.main .offers .of5 .img{
-	background-image: url('../img/part5.png');
-}
-.main .offers .of6 .img{
-	background-image: url('../img/part6.png');
-}
 .main .offers .text,
 .main .offers .tick{
 	display: inline-block;
@@ -489,11 +566,21 @@ a{
 	width: 20%;
 	text-align: right;
 	padding-right: 10px;
-	padding-top: 25px;
+	padding-top: 18px;
+
+	font-size: 25px;
 
 	color: #9999cc;
 
 	vertical-align: top;
+}
+
+.main .offers .of:hover .category{
+	color: #9999cc;
+}
+.main .offers .of:hover .tick{
+	color: #fff;
+	padding-top: 22px;
 }
 
 
@@ -549,6 +636,8 @@ a{
 
 	background-repeat: no-repeat;
 	background-position: center center;
+
+	transition: 0.5s;
 }
 
 .main .types .t1 .circle{
@@ -572,13 +661,19 @@ a{
 .main .types a{
 	display: block;
 	color: rgba(255,255,255,0.6);
+
+	transition: 0.5s;
 }
 
 .main .types a:hover{
 	color: #33cc99;
+
+	transition: 0.5s;
 }
 .main .types a:hover .circle{
 	border: 5px solid #33cc99;
+
+	transition: 0.5s;
 }
 
 .main .types .t1:hover .circle{
@@ -610,6 +705,7 @@ a{
 	height: auto;
 	background-color: #fff;
 	text-align: center;
+	position: relative;
 }
 
 .main .review h2{
@@ -628,6 +724,25 @@ a{
 
 	color: #666;
 }
+
+.main .review .arrow{
+	display: none;
+	position: absolute;
+	top: 200px;
+	z-index: 30;
+
+	font-size: 40px;
+}
+
+.main .review .arrowleft{
+	left: 0;
+}
+
+.main .review .arrowright{
+	right: 0;
+}
+
+
 
 .main .review .rev{
 	display: inline-block;
@@ -756,6 +871,7 @@ a{
 }
 .footer .latestnews .news{
 	padding-bottom: 30px;
+	cursor: pointer;
 }
 .footer .latestnews .img{
 	width: 38px;
@@ -787,6 +903,8 @@ a{
 	font-size: 12px;
 	line-height: 14px;
 	padding: 5px 10px;
+
+	cursor: pointer;
 }
 
 .footer .tags .t{
@@ -801,6 +919,19 @@ a{
 	padding-top: 6px;
 }
 
+.footer .address .icons{
+	padding-top: 15px;
+	font-size: 20px;
+	color: #fff;
+}
+
+.footer .address .icons i{
+	display: inline-block;
+	padding-right: 25px;
+
+	cursor: pointer;
+}
+
 .footer .upper{
 	border-bottom: 1px solid #336666;
 }
@@ -808,20 +939,20 @@ a{
 .footer .lower{
 	text-align: center;
 }
+
 .footer .menu{
 	padding-top: 40px;
 	padding-bottom: 10px;
 }
+
 .footer .menu li{
 	display: inline-block;
 	line-height: normal;
 	color: #fff;
 	font-size: 12px;
-
 }
 
 .footer .menu a{
-	font-weight: bold;
 	color: #fff;
 	font-size: 12px;
 
@@ -856,4 +987,22 @@ a{
 .footer .top .tick{
 	padding-top: 13px;
 }
+
+
+@font-face {
+	font-family: "Roboto-Regular"; 
+	src: url("../fonts/Roboto-Regular.ttf") format("truetype"); 
+	src: url("../fonts/Roboto-Regular.ttf") format("truetype"); 
+	font-style: normal; 
+	font-weight: normal; 
+} 
+
+
+@font-face {
+	font-family: "Roboto-Bold";
+	src: url("../fonts/Roboto-Bold.ttf") format("truetype"); 
+	src: url("../fonts/Roboto-Bold.ttf") format("truetype"); 
+	font-style: normal; 
+	font-weight: normal; 
+} 
 
